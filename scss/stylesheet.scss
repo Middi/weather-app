@@ -1,0 +1,92 @@
+@import "normalise";
+@import "colors";
+@import "typography";
+
+// ------- Page Contents -------- //
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+	background-position: no-repeat bottom center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+main{
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
+}
+
+
+header {
+	height: 56px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+
+nav {
+	max-width: 920px;
+	height: 56px;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.logo {
+	-ms-flex-item-align: center;
+	-ms-grid-row-align: center;
+	align-self: center;
+}
+
+.container {
+	max-width: 920px;
+	margin: 100px auto 10px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.weather-place {
+	margin: 30px auto 0;
+	max-width: 600px;
+	height: 400px;
+	text-align: center;
+}
+
+
+footer {
+	background: #1f2022;
+	display: table;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.built {
+	display: table-cell;
+	vertical-align: middle;
+	color: #c8c8c8;
+}
+
+
+@import "media-queries";

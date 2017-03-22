@@ -1,0 +1,198 @@
+/*=============================================
+=                  NORMALISE                  =
+=============================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Added by Richard */
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  text-decoration: none; }
+
+/*====== TYPOGRAPHY =======*/
+* {
+  color: #1f1f1f;
+  font-family: "Open Sans"; }
+
+h1 {
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  font-weight: 200;
+  color: #1f1f1f; }
+
+h1 span {
+  color: #1f1f1f;
+  font-weight: 700; }
+
+h2 {
+  font-size: 1.5em;
+  font-family: "Open Sans";
+  font-weight: 200;
+  color: #1f1f1f;
+  padding-bottom: 20px; }
+
+h2 span {
+  color: #1f1f1f;
+  font-weight: 700; }
+
+p {
+  font-size: 1.8em;
+  font-family: "Open Sans";
+  font-weight: 200;
+  color: #2f2f2f;
+  padding-bottom: 15px; }
+  p strong {
+    color: #2e2e2e; }
+
+p span {
+  font-family: helvetica;
+  color: #444;
+  font-size: 1.2em;
+  font-weight: 400; }
+
+h4 {
+  font-size: 1.2em;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-align: right; }
+  h4 em {
+    font-style: italic;
+    color: #6f6f6f; }
+
+footer p {
+  font-family: "Open Sans";
+  font-size: 0.9em;
+  padding-top: 14px;
+  font-weight: 300; }
+  footer p strong {
+    color: white; }
+
+a {
+  font-size: 1em; }
+
+.built a,
+strong {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+
+a:hover {
+  text-decoration: underline; }
+
+i {
+  color: #1f1f1f; }
+
+.large {
+  font-size: 240px; }
+
+.fa-heart {
+  font-size: 12px;
+  color: #fc2d23; }
+
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background-position: no-repeat bottom center fixed;
+  background-size: cover; }
+
+main {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%; }
+
+header {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10; }
+
+nav {
+  max-width: 920px;
+  height: 56px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.logo {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center; }
+
+.container {
+  max-width: 920px;
+  margin: 100px auto 10px;
+  padding: 20px 0;
+  text-align: center; }
+
+.weather-place {
+  margin: 30px auto 0;
+  max-width: 600px;
+  height: 400px;
+  text-align: center; }
+
+footer {
+  background: #1f2022;
+  display: table;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center; }
+
+.built {
+  display: table-cell;
+  vertical-align: middle;
+  color: #c8c8c8; }
+
+/*=============================================
+=                 MEDIA QUERIES               =
+=============================================*/
+/* -- BREAK 1 -- */
+/*# sourceMappingURL=style.css.map */
