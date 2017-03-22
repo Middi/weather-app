@@ -11,11 +11,52 @@ $(document).ready(function($) {
   var description = parsed_json.weather[0].description;
   var icon = parsed_json.weather[0].icon;
   
+if(icon == '01d') {
 
+icon = "<i class='ion-ios-sunny large'></i>";
+}
+
+if(icon == '02d') {
+
+icon = "<i class='ion-ios-partlysunny-outline large'></i>";
+}
+
+if(icon == '03d') {
+
+icon = "<i class='ion-ios-cloud-outline large'></i>";
+}
+
+if(icon == '04d') {
+
+icon = "<i class='ion-ios-cloud large'></i>";
+}
 if(icon == '09d') {
 
 icon = "<i class='ion-ios-rainy-outline large'></i>";
-};
+}
+
+if(icon == '10d') {
+
+icon = "<i class='ion-ios-rainy-outline large'></i>";
+}
+
+if(icon == '11d') {
+
+icon = "<i class='ion-ios-thunderstorm-outline large'></i>";
+}
+
+if(icon == '13d') {
+
+icon = "<i class='ion-ios-snowy large'></i>";
+}
+
+if(icon == '50d') {
+
+icon = "<i class='ion-ios-cloud-outline large'></i>";
+}
+
+
+
 
 console.log(clouds);
   $('.weather-place').html(icon +"<p>" + location + ", " + country + "</p><p>" + temp_c + "°C</p>" + "</p><p>" + description).fadeIn(400);
