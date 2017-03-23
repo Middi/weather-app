@@ -1,4 +1,4 @@
-var geoAddress;
+ var geoAddress;
 var units = "&units=metric";
 var endUnit= "C";
 
@@ -34,17 +34,17 @@ function weather() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
 
-      geoAddress = "http://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + units +"&appid=1f3e30098d59daa0ee84d36dca533728";
+      geoAddress = "api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + units +"&appid=1f3e30098d59daa0ee84d36dca533728";
 
-      $.ajax({
-        url: geoAddress,
-        success: function (parsed_json) {
+$.ajax({
+  url : "http://api.wunderground.com/api/c9a588f6c2cd7cb7/geolookup/q/" + position.coords.latitude + "&lon=" + position.coords.longitude + "/conditions.json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json.city;
+  var country = parsed_json.country;
+  var temp_c = parsed_json.temp_f;
+  
 
-          var location = parsed_json.name;
-          var country = parsed_json.sys.country;
-          var temp_c = Math.round(parsed_json.main.temp);
-          var description = parsed_json.weather[0].description;
-          var icon = parsed_json.weather[0].icon;
 
 
           if (icon == '01d') {
