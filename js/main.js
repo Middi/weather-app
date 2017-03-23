@@ -34,7 +34,7 @@ function weather() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
 
-      geoAddress = "http://api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + units +"&appid=1f3e30098d59daa0ee84d36dca533728";
+      geoAddress = "api.openweathermap.org/data/2.5/weather?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude + units +"&appid=1f3e30098d59daa0ee84d36dca533728";
 
       $.ajax({
         url: geoAddress,
