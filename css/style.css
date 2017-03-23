@@ -42,42 +42,38 @@ a {
 
 /*====== TYPOGRAPHY =======*/
 * {
-  color: #1f1f1f;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  color: white; }
 
 h1 {
   font-size: 1.5em;
   font-family: "Open Sans";
-  font-weight: 200;
-  color: #1f1f1f; }
+  font-weight: 200; }
 
 h1 span {
-  color: #1f1f1f;
   font-weight: 700; }
 
 h2 {
   font-size: 1.5em;
   font-family: "Open Sans";
   font-weight: 200;
-  color: #1f1f1f;
   padding-bottom: 20px; }
 
 h2 span {
-  color: #1f1f1f;
   font-weight: 700; }
 
-p {
-  font-size: 1.8em;
+p, a {
+  font-size: 1.8rem;
   font-family: "Open Sans";
   font-weight: 200;
-  color: #2f2f2f;
-  padding-bottom: 15px; }
-  p strong {
-    color: #2e2e2e; }
+  padding-bottom: 15px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease; }
+  p a:hover, a a:hover {
+    color: white; }
 
 p span {
   font-family: helvetica;
-  color: #444;
   font-size: 1.2em;
   font-weight: 400; }
 
@@ -86,9 +82,6 @@ h4 {
   font-family: "Open Sans";
   font-weight: 400;
   text-align: right; }
-  h4 em {
-    font-style: italic;
-    color: #6f6f6f; }
 
 footer p {
   font-family: "Open Sans";
@@ -98,23 +91,18 @@ footer p {
   footer p strong {
     color: white; }
 
-a {
-  font-size: 1em; }
-
 .built a,
 strong {
   padding: 0;
   margin: 0;
+  font-size: 1rem;
   color: white;
   text-decoration: none;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease; }
-
-a:hover {
-  text-decoration: underline; }
-
-i {
-  color: #1f1f1f; }
+  .built a:hover,
+  strong:hover {
+    text-decoration: underline; }
 
 .large {
   font-size: 240px; }
@@ -129,26 +117,17 @@ html {
 
 body {
   position: relative;
-  padding-bottom: 6rem;
   min-height: 100%;
   background-position: no-repeat bottom center fixed;
   background-size: cover; }
 
 main {
-  margin: 0 auto;
-  padding-top: 64px;
-  max-width: 640px;
-  width: 94%; }
-
-header {
-  height: 56px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 10; }
+  background: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+  margin-top: -56px; }
 
 nav {
-  max-width: 920px;
+  max-width: 100%;
   height: 56px;
   margin: 0 auto;
   display: -webkit-box;
@@ -163,20 +142,20 @@ nav {
   -ms-grid-row-align: center;
   align-self: center; }
 
-.container {
-  max-width: 920px;
-  margin: 100px auto 10px;
-  padding: 20px 0;
-  text-align: center; }
+.temp {
+  position: absolute;
+  top: 16px;
+  right: 32px; }
 
 .weather-place {
-  margin: 30px auto 0;
+  margin: 0 auto;
+  padding-top: 130px;
   max-width: 600px;
   height: 400px;
   text-align: center; }
 
 footer {
-  background: #1f2022;
+  background: rgba(0, 0, 0, 0.4);
   display: table;
   width: 100%;
   text-align: center;

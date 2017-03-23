@@ -2,19 +2,17 @@
 /*====== TYPOGRAPHY =======*/
 
 * {
-	color: #1f1f1f;
 	font-family: "Open Sans";
+	color: white;
 }
 
 h1 {
 	font-size: 1.5em;
 	font-family: "Open Sans";
 	font-weight: 200;
-	color: #1f1f1f;
 }
 
 h1 span {
-	color: #1f1f1f;
 	font-weight: 700;
 }
 
@@ -22,29 +20,28 @@ h2 {
 	font-size: 1.5em;
 	font-family: "Open Sans";
 	font-weight: 200;
-	color: #1f1f1f;
 	padding-bottom: 20px;
 }
 
 h2 span {
-	color: #1f1f1f;
 	font-weight: 700;
 }
 
-p {
-	font-size: 1.8em;
+p, a {
+	font-size: 1.8rem;
 	font-family: "Open Sans";
 	font-weight: 200;
-	color: #2f2f2f;
 	padding-bottom: 15px;
-	strong {
-	color: #2e2e2e;
+	-webkit-transition: all 0.6s ease;
+	transition: all 0.6s ease;
+
+	a:hover {
+		color: white;
 	}
 }
 
 p span {
 	font-family: helvetica;
-	color: #444;
 	font-size: 1.2em;
 	font-weight: 400;
 }
@@ -54,11 +51,6 @@ h4 {
 	font-family: "Open Sans";
 	font-weight: 400;
 	text-align: right;
-	em {
-
-  font-style: italic;
-		color: #6f6f6f;
-	}
 }
 
 footer p {
@@ -71,34 +63,27 @@ footer p {
 	}
 }
 
-a {
-	font-size: 1em;
-}
-
 .built a,
 strong {
 	padding: 0;
 	margin: 0;
+	font-size: 1rem;
 	color: white;
 	text-decoration: none;
 	-webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
-}
 
-a:hover {
+
+&:hover {
 	text-decoration: underline;
 }
-
-i {
-	color: #1f1f1f;
 }
+
 
 
 .large {
 	font-size: 240px;
 }
-
-
 
 .fa-heart {
 	font-size: 12px;
