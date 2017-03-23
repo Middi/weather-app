@@ -5,13 +5,13 @@
 // ------- Page Contents -------- //
 
 html {
-  height: 100%;
+  max-height: 100vh;
   box-sizing: border-box;
 }
 
 body {
   position: relative;
-  min-height: 100%;
+  height: 100%;
 	background-position: no-repeat bottom center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -48,8 +48,8 @@ nav {
 	position: absolute;
 	top: 16px;
 	right: 32px;
-
 }
+
 .weather-place {
 	margin: 0 auto;
 	padding-top: 130px;
@@ -59,7 +59,6 @@ nav {
 }
 
 footer {
-
 	background: rgba(0, 0, 0, 0.4);
 	display: table;
 	width: 100%;

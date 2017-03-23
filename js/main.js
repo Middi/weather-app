@@ -1,10 +1,12 @@
 var geoAddress;
 var units = "&units=metric";
+var endUnit= "C";
 
 // farenheit or celsius
 
 $('.celsius').on('click', function () {
     units = "&units=metric";
+    endUnit = "C";
     $(this).css({'color': 'white'});
     $('.farenheit').css('color', 'rgba(72, 72, 72, 1.0)');
     weather();
@@ -13,6 +15,7 @@ $('.celsius').on('click', function () {
 
 $('.farenheit').on('click', function () {
     units = "&units=imperial";
+    endUnit = "F";
     $(this).css({'color': 'white'});
     $('.celsius').css('color', 'rgba(72, 72, 72, 1.0)');
     weather();
@@ -88,7 +91,7 @@ function weather() {
           }
 
           // Add to Dom
-          $('.weather-place').html(icon + "<p>" + location + ", " + country + "</p><p>" + temp_c + "°C</p>" + "</p><p>" + description).fadeIn(400);
+          $('.weather-place').html(icon + "<p>" + location + ", " + country + "</p><p>" + temp_c + "°" + endUnit + "</p>" + "<p>" + description).fadeIn(400) + "</p>";
 
         }
       })
