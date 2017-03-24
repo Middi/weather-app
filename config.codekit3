@@ -69,6 +69,15 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/new-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/new-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/new.js": {
 		"ft": 64,
 		"mi": 1,
