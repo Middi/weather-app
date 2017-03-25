@@ -27,7 +27,7 @@ h2 span {
 	font-weight: 700;
 }
 
-p, a {
+p, a{
 	font-size: 1.8rem;
 	font-family: "Open Sans";
 	font-weight: 200;
@@ -35,7 +35,7 @@ p, a {
 	-webkit-transition: all 0.6s ease;
 	transition: all 0.6s ease;
 
-	a:hover {
+	&:hover {
 		color: white;
 	}
 }
@@ -79,11 +79,13 @@ strong {
 }
 }
 
-
-
-
 .large {
 	font-size: 240px;
+}
+
+.fa-free-code-camp {
+	padding: 0 5px 0 0;
+	color:   white;
 }
 
 .fa-heart {
