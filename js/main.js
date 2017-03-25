@@ -6,9 +6,7 @@ jQuery(function ($) {
   $('.celsius').on('click', function () {
     units = "&units=metric";
     endUnit = "C";
-    $(this).css({
-      'color': 'white'
-    });
+    $(this).css({'color': 'white'});
     $('.farenheit').css('color', 'rgba(72, 72, 72, 1.0)');
     weather();
   });
@@ -16,18 +14,14 @@ jQuery(function ($) {
   $('.farenheit').on('click', function () {
     units = "&units=imperial";
     endUnit = "F";
-    $(this).css({
-      'color': 'white'
-    });
+    $(this).css({'color': 'white'});
     $('.celsius').css('color', 'rgba(72, 72, 72, 1.0)');
     weather();
   });
 
   // New quote on start
   $(document).ready(function () {
-    $('.celsius').css({
-      'color': 'white'
-    });
+    $('.celsius').css({'color': 'white'});
     $('.farenheit').css('color', 'rgba(72, 72, 72, 1.0)');
     weather();
   });
@@ -42,7 +36,7 @@ jQuery(function ($) {
       displayWeather(city, country);
     });
 
-
+    // Make API URL
     function displayWeather(city, country) {
       var weatherAPI = "http://api.openweathermap.org/data/2.5/weather?q=";
       var API_Key = "&APPID=1f3e30098d59daa0ee84d36dca533728";
@@ -55,14 +49,14 @@ jQuery(function ($) {
         var description = response.weather[0].description;
         var icon = response.weather[0].icon;
 
+        //Switch Icons and send to DOM
         replace(icon, city, country, temp_c, endUnit, description);
-
       });
     }
-  };
+  }
 
   function replace(icon, city, country, temp_c, endUnit, description) {
-    
+
     // Switch to ION icons' icon pack
     if (icon == '01d') {
       icon = "<i class='ion-ios-sunny-outline large'></i>";
@@ -86,13 +80,11 @@ jQuery(function ($) {
       icon = "<i class='ion-ios-snowy large'></i>";
     } else if (icon == '50d' || icon == '50n') {
       icon = "<i class='ion-ios-cloud-outline large'></i>";
-    };
-
+    }
 
     // Add to Dom
     $('.weather-place').html(icon + "<p>" + city + ", " + country + "</p><p>" + temp_c + "°" + endUnit + "</p>" + "<p>" + description).fadeIn(400) + "</p>";
-
-  };
+  }
 
 
   // Get time and change background
