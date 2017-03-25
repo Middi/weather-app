@@ -9,6 +9,15 @@
 	],
 "creatorBuild": "25704",
 "files": {
+	"\/almost.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/almost-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -33,6 +42,14 @@
 		"oF": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"\/images\/loading.gif": {
+		"ft": 4194304,
+		"iS": 47658,
+		"oA": 0,
+		"oAP": "\/images\/loading.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/night.jpg": {
 		"ft": 16384,
