@@ -48,8 +48,13 @@ nav {
 	position: absolute;
 	top: 16px;
 	right: 32px;
+	cursor: pointer;
+	height: 40px;
 }
 
+.loading {
+	padding-top: 100px;
+}
 .weather-place {
 	margin: 0 auto;
 	padding-top: 130px;
