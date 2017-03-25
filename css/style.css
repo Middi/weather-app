@@ -149,7 +149,9 @@ nav {
 .temp {
   position: absolute;
   top: 16px;
-  right: 32px; }
+  right: 32px;
+  cursor: pointer;
+  height: 40px; }
 
 .loading {
   padding-top: 100px; }
@@ -184,7 +186,8 @@ footer {
 @media only screen and (max-width: 600px) {
   .temp {
     top: 18px;
-    right: 16px; }
+    right: 16px;
+    height: 30px; }
     .temp p, .temp a {
       font-size: 1.3rem; }
   .weather-place {
