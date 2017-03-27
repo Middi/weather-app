@@ -1,7 +1,7 @@
 # weather-app
 
 
-### FCC Weather App
+Alt - FCC Weather App
 ======
 
 Weather app project as part of freeCodeCamp's syllabus.
