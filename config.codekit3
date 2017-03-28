@@ -34,6 +34,16 @@
 		"oAP": "\/css\/style.css.map",
 		"oF": 0
 		},
+	"\/images\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 17555,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/images\/apple-touch-icon.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/images\/day.jpg": {
 		"ft": 16384,
 		"iS": 359850,
@@ -42,6 +52,12 @@
 		"oF": 0,
 		"opt": 1,
 		"q": 100
+		},
+	"\/images\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/images\/favicon.ico",
+		"oF": 0
 		},
 	"\/images\/loading.gif": {
 		"ft": 4194304,

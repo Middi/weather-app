@@ -5,21 +5,46 @@ $(document).ready(function () {
 
   var endUnit = "C";
 
-  $.getJSON('http://ip-api.com/json', function (response) {
-    var city = response.city;
-    var country = response.country;
-    displayWeather(city, country);
-  });
+  //Get Latitude and Longitude
 
-  function displayWeather(city, country) {
+  function success(pos) {
+    var crds = pos.coords
 
-    var full_API_Link = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&units=imperial&APPID=1ce9a2bb38fce8615c8ceb3367baf542";
+    var lat = crds.latitude;
+    var lon = crds.longitude;
 
+    displayWeather(lat, lon);
+
+  }
+
+  function error(pos) {
+
+    var url = "https://ipinfo.io/geo";
+    $.getJSON(url, function(response){
+
+      var loc = response.loc.split(',');
+      var lat = loc[0];
+      var lon = loc[1];
+      
+      displayWeather(lat, lon);
+    });
+    
+  }
+
+  navigator.geolocation.getCurrentPosition(success, error);
+
+
+  function displayWeather(lat, lon) {
+
+    var full_API_Link = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=imperial&units=imperial&APPID=1ce9a2bb38fce8615c8ceb3367baf542";
     $.getJSON(full_API_Link, function (response) {
 
+console.log(full_API_Link);
       var icon = response.weather[0].icon;
       var description = response.weather[0].description;
       var temp_f = Math.round(response.main.temp);
+      var country = response.sys.country;
+      var city = response.name;
 
       // Switch to ION icons' icon pack
       if (icon == '01d') {
