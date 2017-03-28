@@ -96,9 +96,6 @@ console.log(full_API_Link);
   }
 
 
-
-
-
 });
 
 // Get time and change background
