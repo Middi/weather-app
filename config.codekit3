@@ -7,7 +7,7 @@
 		"uuidString": "F979EBF1-A6D2-49DD-9F19-3BA2DD3A1615"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25849",
 "files": {
 	"\/almost.js": {
 		"ft": 64,
@@ -37,11 +37,12 @@
 	"\/images\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 17555,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/images\/apple-touch-icon.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/images\/day.jpg": {
@@ -50,6 +51,7 @@
 		"oA": 0,
 		"oAP": "\/images\/day.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
@@ -73,17 +75,19 @@
 		"oA": 0,
 		"oAP": "\/images\/night.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
 		"q": 100
 		},
 	"\/images\/quote.png": {
 		"ft": 32768,
 		"iS": 1939,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/images\/quote.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/images\/quote.svg": {
@@ -1190,6 +1194,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -2014,14 +2022,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -2084,7 +2084,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
@@ -2170,6 +2170,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
