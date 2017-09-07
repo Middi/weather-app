@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   function error(pos) {
 
-    var url = "https://ipinfo.io/geo";
+    var url = "https://cors-anywhere.herokuapp.com/https://ipinfo.io/geo";
     $.getJSON(url, function(response){
       var loc = response.loc.split(',');
       var lat = loc[0];
@@ -39,7 +39,9 @@ $(document).ready(function () {
         var address = `${lat},${lon}`;
     
         $.getJSON(`https://cors-anywhere.herokuapp.com/http://maps.googleapis.com/maps/api/geocode/json?address=${address}`, function (response) {
-        var city = response.results[4].address_components[0].long_name;
+          console.log(response);
+        var city = response.results[0].address_components[3].long_name;
+
         displayWeather(lat, lon, city);
         });
 }
